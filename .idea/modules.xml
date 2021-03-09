@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/SimpleNetworkLibrary-master.iml" filepath="$PROJECT_DIR$/.idea/SimpleNetworkLibrary-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SimpleNetworkLibrary-master.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SimpleNetworkLibrary-master.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/simplenetworklibrary/SimpleNetworkLibrary-master.wappernetworklibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/simplenetworklibrary/SimpleNetworkLibrary-master.wappernetworklibrary.iml" />
+    </modules>
+  </component>
+</project>
