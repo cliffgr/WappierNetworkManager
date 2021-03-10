@@ -17,7 +17,7 @@
         android:background="@android:color/white"
         android:orientation="vertical">
 
-        <com.ahmedadelsaid.simplenetworklibrary.imagerequest.RequestImageView
+        <com.wappier.waplib.imagerequest.RequestImageView
             android:id="@+id/user_image_iv"
             android:layout_width="match_parent"
             android:layout_height="200dp"

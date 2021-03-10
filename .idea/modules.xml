@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/SimpleNetworkLibrary-master.iml" filepath="$PROJECT_DIR$/.idea/SimpleNetworkLibrary-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SimpleNetworkLibrary-master.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SimpleNetworkLibrary-master.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/simplenetworklibrary/SimpleNetworkLibrary-master.wappernetworklibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/simplenetworklibrary/SimpleNetworkLibrary-master.wappernetworklibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/simplenetworklibrary/SimpleNetworkLibrary-master.wappiernetworklibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/simplenetworklibrary/SimpleNetworkLibrary-master.wappiernetworklibrary.iml" />
     </modules>
   </component>
 </project>

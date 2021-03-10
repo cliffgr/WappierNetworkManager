@@ -7,7 +7,7 @@
 
     <include layout="@layout/app_tool_bar" />
 
-    <com.ahmedadelsaid.simplenetworkproject.CustomSwipeToRefresh
+    <com.wappier.simplenetworkproject.utils.CustomSwipeToRefresh
         android:id="@+id/swipe_to_refresh"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -17,10 +17,10 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view"
             android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:background="@color/background"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior"
-            android:layout_height="match_parent" />
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
-    </com.ahmedadelsaid.simplenetworkproject.CustomSwipeToRefresh>
+    </com.wappier.simplenetworkproject.utils.CustomSwipeToRefresh>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
