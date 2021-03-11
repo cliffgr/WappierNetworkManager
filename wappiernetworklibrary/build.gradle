@@ -1,5 +1,8 @@
 apply plugin: 'com.android.library'
-apply plugin: 'maven-publish'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = 'com.github.cliffgr'
+
 
 android {
     compileSdkVersion 29
@@ -34,7 +37,7 @@ dependencies {
 group = 'com.github.jitpack'
 version = '1.0.4'
 
-afterEvaluate {
+/*afterEvaluate {
     publishing {
         publications {
             // Creates a Maven publication called "release".
@@ -58,4 +61,4 @@ afterEvaluate {
             }
         }
     }
-}
+}*/
