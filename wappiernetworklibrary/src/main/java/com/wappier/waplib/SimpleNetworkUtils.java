@@ -1,8 +1,6 @@
 package com.wappier.waplib;
 
 import android.content.Context;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 
 /**
  * Created by Ahmed Adel on 19/06/2017.
@@ -13,9 +11,7 @@ import android.net.NetworkInfo;
 public class SimpleNetworkUtils {
 
     public static boolean isNetworkAvailable(Context context) {
-        ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo info = cm.getActiveNetworkInfo();
-        return info != null && info.isConnectedOrConnecting();
+        return true;
     }
 
     public static String getCacheKey(String url) {

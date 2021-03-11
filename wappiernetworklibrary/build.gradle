@@ -1,5 +1,4 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.jfrog.bintray'
 apply plugin: 'maven-publish'
 
 android {
@@ -10,7 +9,7 @@ android {
         minSdkVersion 14
         targetSdkVersion 29
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.4"
 
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
 
@@ -32,51 +31,31 @@ dependencies {
     testImplementation 'junit:junit:4.12'
 }
 
-def libGroupId = 'com.wappier'
-def libArtifactId = 'wappiernetworklibrary'
-def libVersion = '1.0'
-def libDesc = 'This is a lib that is managed by wappier'
-def libLicenses = ['Apache-2.0']
-def libVCSUrl = 'https://github.com/cliffgr/WappierNetworkManager.git'
+group = 'com.github.jitpack'
+version = '1.0.4'
 
-// Generate Source Jar
-task sourceJar(type: Jar) {
-    from android.sourceSets.main.java.srcDirs
-    classifier "sources"
-}
+afterEvaluate {
+    publishing {
+        publications {
+            // Creates a Maven publication called "release".
+            release(MavenPublication) {
+                // Applies the component for the release build variant.
+                from components.release
 
-// Create the publication with the pom configuration
-publishing {
-    publications {
-        MyPublication(MavenPublication) {
-            groupId libGroupId
-            artifactId libArtifactId
-            version libVersion
-            artifact(sourceJar)
-            artifact("$buildDir/outputs/aar/$libArtifactId-release.aar")
-        }
-    }
-}
+                // You can then customize attributes of the publication as shown below.
+                groupId = 'com.github.cliffgr'
+                artifactId = 'final'
+                version = '1.0.4'
+            }
+            // Creates a Maven publication called “debug”.
+            debug(MavenPublication) {
+                // Applies the component for the debug build variant.
+                from components.debug
 
-// Bintray config
-Properties properties = new Properties()
-properties.load(project.rootProject.file('local.properties').newDataInputStream())
-
-bintray {
-    user = properties.getProperty("bintray.user")
-    key = properties.getProperty("bintray.apikey")
-    publications = ['MyPublication']
-
-    pkg {
-        repo = "wappier"
-        name = "$libGroupId:$libArtifactId"
-        desc = libDesc
-        licenses = libLicenses
-        vcsUrl = libVCSUrl
-        version {
-            name = libVersion
-            vcsTag = libVersion
-            released = new Date()
+                groupId = 'com.github.cliffgr'
+                artifactId = 'final-debug'
+                version = '1.0.4'
+            }
         }
     }
 }
