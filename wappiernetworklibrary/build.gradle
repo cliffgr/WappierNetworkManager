@@ -1,8 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
-
 group = 'com.github.cliffgr'
-
 
 android {
     compileSdkVersion 29
@@ -12,7 +10,7 @@ android {
         minSdkVersion 14
         targetSdkVersion 29
         versionCode 1
-        versionName "1.0.4"
+        versionName "1.0.5"
 
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
 
@@ -34,31 +32,4 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
 }
 
-group = 'com.github.jitpack'
-version = '1.0.4'
 
-/*afterEvaluate {
-    publishing {
-        publications {
-            // Creates a Maven publication called "release".
-            release(MavenPublication) {
-                // Applies the component for the release build variant.
-                from components.release
-
-                // You can then customize attributes of the publication as shown below.
-                groupId = 'com.github.cliffgr'
-                artifactId = 'final'
-                version = '1.0.4'
-            }
-            // Creates a Maven publication called “debug”.
-            debug(MavenPublication) {
-                // Applies the component for the debug build variant.
-                from components.debug
-
-                groupId = 'com.github.cliffgr'
-                artifactId = 'final-debug'
-                version = '1.0.4'
-            }
-        }
-    }
-}*/
